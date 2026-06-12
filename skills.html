@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Skills — Arpan Das</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;700&display=swap" rel="stylesheet"/>
+</head>
+<body class="inner-page">
+
+<div id="cursor-glow"></div>
+
+<nav id="navbar">
+  <div class="nav-logo" onclick="navigateTo('index.html')">AD<span class="dot">.</span></div>
+  <ul class="nav-links">
+    <li><a href="index.html" class="nav-link">Home</a></li>
+    <li><a href="about.html" class="nav-link">About</a></li>
+    <li><a href="skills.html" class="nav-link active">Skills</a></li>
+    <li><a href="projects.html" class="nav-link">Projects</a></li>
+    <li><a href="contact.html" class="nav-link">Contact</a></li>
+  </ul>
+  <div class="nav-toggle" id="navToggle"><span></span><span></span><span></span></div>
+</nav>
+
+<div class="page-header">
+  <div class="page-header-bg"></div>
+  <div class="page-header-content reveal">
+    <span class="page-tag">What I Know</span>
+    <h1>My <span class="accent">Skills</span></h1>
+    <p>Languages I speak fluently with machines</p>
+  </div>
+</div>
+
+<section class="skills-section">
+  <div class="container">
+
+    <div class="skills-grid reveal">
+
+      <!-- C -->
+      <div class="skill-card">
+        <div class="skill-card-inner">
+          <div class="skill-logo-wrap c-logo">
+            <svg viewBox="0 0 128 128" class="skill-svg">
+              <path fill="#659BD3" d="M115.4 30.7L67.1 2.9c-.8-.5-1.9-.7-3.1-.7-1.2 0-2.3.3-3.1.7l-48 27.9c-1.7 1-2.9 3.5-2.9 5.4v55.7c0 1.1.2 2.4 1 3.5l106.8-62c-.6-1.2-1.5-2.1-2.4-2.7z"/>
+              <path fill="#03599C" d="M10.7 95.3c.5.8 1.2 1.5 1.9 1.9l48.2 27.9c.8.5 1.9.7 3.1.7 1.2 0 2.3-.3 3.1-.7l48-27.9c1.7-1 2.9-3.5 2.9-5.4V36.1c0-.9-.1-1.9-.6-2.8l-106.6 62z"/>
+              <path fill="#fff" d="M85.3 76.1C81.1 83.5 73.1 88.5 64 88.5c-13.5 0-24.5-11-24.5-24.5s11-24.5 24.5-24.5c9.1 0 17.1 5 21.3 12.5l13-7.5c-6.8-11.9-19.6-20-34.3-20-21.8 0-39.5 17.7-39.5 39.5s17.7 39.5 39.5 39.5c14.6 0 27.4-8 34.2-19.8l-12.9-7.6z"/>
+            </svg>
+          </div>
+          <h3 class="skill-name">C</h3>
+          <p class="skill-desc">Fundamentals, memory management, algorithms and data structures — where it all began.</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="75">
+              <div class="skill-bar-fill"></div>
+            </div>
+            <span class="skill-percent">75%</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- HTML -->
+      <div class="skill-card">
+        <div class="skill-card-inner">
+          <div class="skill-logo-wrap html-logo">
+            <svg viewBox="0 0 128 128" class="skill-svg">
+              <path fill="#E44D26" d="M19.037 113.876L9.032 1.661h109.936l-10.016 112.198-45.019 12.48z"/>
+              <path fill="#F16529" d="M64 116.8l36.378-10.086 8.559-95.878H64z"/>
+              <path fill="#EBEBEB" d="M64 52.455H45.788L44.53 38.361H64V24.599H29.489l.33 3.692 3.382 37.927H64zm0 35.743l-.061.017-15.327-4.14-.979-10.975H33.816l1.928 21.609 28.193 7.826.063-.017z"/>
+              <path fill="#fff" d="M63.952 52.455v13.762h16.947l-1.597 17.849-15.35 4.143v14.319l28.215-7.82.207-2.325 3.234-36.233.336-3.695h-3.708zm0-27.856v13.762h33.244l.276-3.092.628-6.978.329-3.692z"/>
+            </svg>
+          </div>
+          <h3 class="skill-name">HTML</h3>
+          <p class="skill-desc">Semantic markup, accessible structure, and the backbone of every web interface I build.</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="90">
+              <div class="skill-bar-fill"></div>
+            </div>
+            <span class="skill-percent">90%</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CSS -->
+      <div class="skill-card">
+        <div class="skill-card-inner">
+          <div class="skill-logo-wrap css-logo">
+            <svg viewBox="0 0 128 128" class="skill-svg">
+              <path fill="#1572B6" d="M18.814 114.123L8.76 1.352h110.48l-10.064 112.754-45.243 12.543-45.119-12.526z"/>
+              <path fill="#33A9DC" d="M64.001 117.062l36.559-10.136 8.601-96.354H64.001v106.49z"/>
+              <path fill="#fff" d="M64.001 51.429h18.302l1.264-14.163H64.001V23.435h34.682l-.332 3.711-3.4 38.114h-30.95V51.429z"/>
+              <path fill="#EBEBEB" d="M64.083 87.349l-.061.018-15.403-4.159-.985-11.031H33.752l1.937 21.717 28.331 7.863.063-.018V87.349z"/>
+              <path fill="#fff" d="M81.127 64.675l-1.666 18.522-15.426 4.164v13.397l28.354-7.858.208-2.337 2.406-26.888H81.127z"/>
+              <path fill="#EBEBEB" d="M64.048 23.435v13.831H30.64l-.277-3.108-.63-7.012-.329-3.711h34.644zm-.047 27.994v13.831H48.792l-.277-3.108-.631-7.015-.328-3.708h16.445z"/>
+            </svg>
+          </div>
+          <h3 class="skill-name">CSS</h3>
+          <p class="skill-desc">Animations, layouts, responsive design — styling that makes interfaces feel alive.</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="88">
+              <div class="skill-bar-fill"></div>
+            </div>
+            <span class="skill-percent">88%</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- JavaScript -->
+      <div class="skill-card">
+        <div class="skill-card-inner">
+          <div class="skill-logo-wrap js-logo">
+            <svg viewBox="0 0 128 128" class="skill-svg">
+              <path fill="#F0DB4F" d="M1.408 1.408h125.184v125.185H1.408z"/>
+              <path fill="#323330" d="M116.347 96.736c-.917-5.711-4.641-10.508-15.672-14.981-3.832-1.761-8.104-3.022-9.377-5.926-.452-1.69-.512-2.642-.226-3.665.821-3.32 4.784-4.355 7.925-3.403 2.023.678 3.938 2.237 5.093 4.724 5.402-3.498 5.391-3.475 9.163-5.879-1.381-2.141-2.118-3.129-3.022-4.045-3.249-3.629-7.676-5.498-14.756-5.355l-3.688.477c-3.534.921-6.885 2.992-8.944 6.015-3.333 4.91-3.882 11.012-1.551 16.497 2.764 6.603 8.26 10.496 14.782 12.13 3.416.936 8.159 1.401 9.524 4.972.575 2.128.075 3.541-.961 4.876-1.974 2.336-5.71 3.167-9.342 2.584-3.81-.617-6.12-2.409-8.026-5.499-1.9 1.089-10.194 5.851-10.977 6.302 1.554 3.124 3.2 4.674 5.913 6.423 4.488 2.923 9.534 4.021 14.88 3.663 5.503-.358 10.617-2.005 13.879-5.925 3.482-4.118 4.341-10.081 3.167-15.746zm-41.558 5.073c-2.539-4.004-6.138-5.913-11.17-6.463-2.418-.278-5.008-1.02-5.808-2.789-.535-1.185-.321-3.225.517-4.498 1.315-1.993 3.782-2.619 6.173-2.453 2.38.167 4.547 1.137 5.706 3.49 4.951-3.172 4.951-3.172 9.142-5.842-1.655-2.53-3.012-3.688-5.395-5.055-3.867-2.278-8.204-3.018-12.75-2.458-4.395.542-8.458 2.404-10.992 5.983-2.744 3.855-3.36 9.126-1.919 13.609 1.755 5.406 6.29 8.534 11.682 10.264 3.246 1.006 7.826 1.405 8.844 4.97.56 2.087.048 3.484-.955 4.823-1.938 2.306-5.604 3.148-9.183 2.555-3.677-.598-5.974-2.44-7.837-5.555-2.161 1.237-5.37 3.078-9.261 5.301 1.677 3.299 3.351 4.877 6.213 6.75 4.59 2.879 9.642 3.899 14.99 3.487 5.425-.418 10.537-2.182 13.729-6.255 3.358-4.256 4.073-10.332 2.233-15.866z"/>
+            </svg>
+          </div>
+          <h3 class="skill-name">JavaScript</h3>
+          <p class="skill-desc">DOM manipulation, async logic, event-driven UI — the language that brings pages to life.</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="82">
+              <div class="skill-bar-fill"></div>
+            </div>
+            <span class="skill-percent">82%</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Java -->
+      <div class="skill-card">
+        <div class="skill-card-inner">
+          <div class="skill-logo-wrap java-logo">
+            <svg viewBox="0 0 128 128" class="skill-svg">
+              <path fill="#0074BD" d="M47.617 98.12s-4.767 2.774 3.397 3.71c9.892 1.13 14.947.968 25.845-1.092 0 0 2.871 1.795 6.873 3.351-24.439 10.47-55.308-.607-36.115-5.969zm-2.988-13.665s-5.348 3.959 2.823 4.805c10.567 1.091 18.91 1.18 33.354-1.6 0 0 1.993 2.025 5.132 3.131-29.542 8.64-62.446.68-41.309-6.336z"/>
+              <path fill="#EA2D2E" d="M69.802 61.271c6.025 6.929-1.58 13.17-1.58 13.17s15.289-7.891 8.269-17.777c-6.559-9.215-11.587-13.792 15.635-29.58 0 .001-42.731 10.67-22.324 34.187z"/>
+              <path fill="#0074BD" d="M102.123 108.229s3.529 2.91-3.888 5.159c-14.102 4.272-58.706 5.56-71.094.171-4.451-1.938 3.899-4.625 6.526-5.192 2.739-.593 4.303-.485 4.303-.485-4.953-3.487-32.013 6.85-13.743 9.815 49.821 8.076 90.817-3.637 77.896-9.468zM49.921 71.702s-22.686 5.389-8.033 7.348c6.188.828 18.518.638 30.011-.326 9.39-.789 18.813-2.474 18.813-2.474s-3.308 1.419-5.704 3.053c-23.042 6.061-67.544 3.238-54.731-2.958 10.832-5.239 19.644-4.643 19.644-4.643zm40.683 22.749c23.421-12.167 12.591-23.86 5.032-22.285-1.848.385-2.677.72-2.677.72s.688-1.079 2-1.543c14.953-5.255 26.451 15.503-4.823 23.725 0-.001.359-.327.468-.617z"/>
+              <path fill="#EA2D2E" d="M76.491 1.587s12.968 12.97-12.303 32.923c-20.266 16.006-4.621 25.13-.007 35.559-11.831-10.673-20.509-20.07-14.688-28.815C58.041 28.91 81.722 22.995 76.491 1.587z"/>
+              <path fill="#0074BD" d="M52.214 126.021c22.476 1.437 57-.8 57.817-11.436 0 0-1.571 4.032-18.577 7.231-19.186 3.612-42.854 3.191-56.887.874 0 .001 2.875 2.381 17.647 3.331z"/>
+            </svg>
+          </div>
+          <h3 class="skill-name">Java</h3>
+          <p class="skill-desc">OOP principles, class structures, and backend logic — building robust, scalable programs.</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="70">
+              <div class="skill-bar-fill"></div>
+            </div>
+            <span class="skill-percent">70%</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Hackathons badge section -->
+    <div class="hackathon-banner reveal">
+      <div class="hack-icon">🏆</div>
+      <div class="hack-text">
+        <h3>Hackathons & Workshops</h3>
+        <p>Participated in <strong>10+</strong> hackathons and workshops — collaborating, building, and winning under pressure. Every event is a chance to level up.</p>
+      </div>
+      <a href="projects.html" class="btn-primary">View Projects →</a>
+    </div>
+
+  </div>
+</section>
+
+<footer class="mini-footer">
+  <p>© 2025 Arpan Das · Designed & Coded by me</p>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
