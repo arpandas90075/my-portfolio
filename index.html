@@ -1,142 +1,337 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Arpan Das — Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;700&display=swap" rel="stylesheet"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arpan Das — Build Index</title>
+<meta name="description" content="Arpan Das — BCA student in Kolkata. AI automation, client-side web tools and Python desktops. SIH 2026 heatwave warning system, a WhatsApp AI assistant, and 31 repositories.">
+<meta name="theme-color" content="#0C0B08">
+<meta property="og:title" content="Arpan Das — Build Index">
+<meta property="og:description" content="AI automation and 31 repositories. SIH26083 heatwave early warning + a WhatsApp assistant at group scale.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
+<div id="prog"></div>
 
-<!-- ═══ CURSOR GLOW ═══ -->
-<div id="cursor-glow"></div>
-
-<!-- ═══ NAVBAR ═══ -->
-<nav id="navbar">
-  <div class="nav-logo" onclick="navigateTo('index.html')">AD<span class="dot">.</span></div>
-  <ul class="nav-links">
-    <li><a href="index.html" class="nav-link active" data-page="home">Home</a></li>
-    <li><a href="about.html" class="nav-link" data-page="about">About</a></li>
-    <li><a href="skills.html" class="nav-link" data-page="skills">Skills</a></li>
-    <li><a href="projects.html" class="nav-link" data-page="projects">Projects</a></li>
-    <li><a href="contact.html" class="nav-link" data-page="contact">Contact</a></li>
-  </ul>
-  <div class="nav-toggle" id="navToggle">
-    <span></span><span></span><span></span>
+<header class="topbar">
+  <div class="wrap topbar-in">
+    <a href="#top" class="brand"><span class="mark">AD</span>Arpan&nbsp;Das</a>
+    <nav class="topnav">
+      <a href="#lab" data-s="lab">Now</a>
+      <a href="#about" data-s="about">About</a>
+      <a href="#stack" data-s="stack">Stack</a>
+      <a href="#work" data-s="work">Work</a>
+      <a href="#index" data-s="index">Index</a>
+      <a href="#contact" data-s="contact">Contact</a>
+    </nav>
+    <button class="tbtn" id="themeBtn" type="button" aria-label="Switch colour theme">Theme</button>
   </div>
-</nav>
+</header>
 
-<!-- ═══ HERO SECTION ═══ -->
-<section class="hero" id="hero">
-  <canvas id="matrix-canvas"></canvas>
+<main id="top">
 
-  <div class="hero-content">
-    <div class="hero-tag">
-      <span class="tag-dot"></span>
-      <span>Available for opportunities</span>
-    </div>
-
-    <h1 class="hero-name">
-      <span class="name-line" id="nameAnimate">Arpan Das</span>
-    </h1>
-
-    <div class="hero-role">
-      <span class="role-static">I build </span>
-      <span class="role-dynamic" id="roleDynamic"></span>
-    </div>
-
-    <p class="hero-sub">
-      BCA 2nd Semester Student · Developer · Hackathon Enthusiast
-    </p>
-
-    <div class="hero-cta">
-      <a href="projects.html" class="btn-primary">
-        <span>View Projects</span>
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg>
-      </a>
-      <a href="contact.html" class="btn-ghost">Say Hello</a>
-    </div>
-
-    <div class="hero-stats">
-      <div class="stat">
-        <span class="stat-num" data-target="5">0</span>
-        <span class="stat-label">Languages</span>
+  <section class="wrap hero">
+    <canvas id="dots" aria-hidden="true"></canvas>
+    <div class="hero-grid">
+      <div>
+        <span class="eyebrow mono"><span class="pip"></span>Kolkata · BCA · Open to internships</span>
+        <h1>Arpan<br><span class="l2">Das</span></h1>
+        <p class="lede">
+          I build tools that work the moment you open them. 31 repositories so far, most of them
+          a single page with no install, no server and no account.
+        </p>
+        <p class="lede">
+          Right now the bulk of my time goes to automation: a <b>WhatsApp assistant</b> running live
+          across groups for a client, and a <b>heatwave warning system</b> for Smart India Hackathon 2026.
+        </p>
+        <div class="cta">
+          <a class="btn solid" href="#lab">What I'm building <span>→</span></a>
+          <a class="btn ghost" href="#index">Browse all 31 repos</a>
+        </div>
       </div>
-      <div class="stat-divider"></div>
-      <div class="stat">
-        <span class="stat-num" data-target="2">0</span>
-        <span class="stat-label">Projects</span>
+
+      <aside class="now" aria-label="Current status">
+        <div class="now-h"><span>Now</span><span id="nowDate">—</span></div>
+        <div class="now-row">
+          <span class="k">Hackathon</span>
+          <span class="v">SIH26083 · Heatwave warning</span>
+          <span class="m">Ministry of Earth Sciences · <span class="hot" id="nowCd">—</span></span>
+        </div>
+        <div class="now-row">
+          <span class="k">Client build</span>
+          <span class="v">WhatsApp AI assistant</span>
+          <span class="m"><span class="ok">Running</span> in live groups · scaling to 200+</span>
+        </div>
+        <div class="now-row">
+          <span class="k">Code on GitHub</span>
+          <span class="v"><span id="nowKb">964</span> KB across 24 public repos</span>
+          <span class="m">6 languages · all MIT licensed</span>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="wrap" style="padding-bottom:clamp(34px,5vw,62px)">
+    <div class="rail reveal">
+      <div><b data-count="31">0</b><span>Repositories</span></div>
+      <div><b data-count="6">0</b><span>Languages</span></div>
+      <div><b data-count="964">0</b><span>KB of code</span></div>
+      <div><b data-count="10" data-suffix="+">0</b><span>Hackathons</span></div>
+    </div>
+  </section>
+
+  <!-- ── NOW / LAB ── -->
+  <section class="sec" id="lab">
+    <div class="wrap">
+      <div class="sec-head reveal"><span class="mono">01</span><h2>Currently building</h2><span class="tail">AI &amp; automation</span></div>
+      <div class="lab">
+
+        <article class="lab-card reveal">
+          <div class="lab-top">
+            <span class="tagid">SIH26083</span>
+            <span class="badge wip">In development</span>
+            <span class="right">Idea submission closes 30 Sep 2026</span>
+          </div>
+          <div class="lab-body">
+            <div>
+              <h3>Extreme Heatwave Early Warning &amp; Human Thermal Stress Index</h3>
+              <p class="org">Smart India Hackathon 2026<br>Ministry of Earth Sciences · NCMRWF<br>Software · Disaster Management</p>
+              <dl class="kv">
+                <dt>Input</dt><dd>NCMRWF / IMD forecast fields</dd>
+                <dt>Output</dt><dd>Ward-level stress index + alert</dd>
+                <dt>Stage</dt><dd>Data pipeline and index model</dd>
+              </dl>
+              <div class="cd" id="cd" aria-label="Time left before the SIH 2026 idea submission deadline"></div>
+            </div>
+            <div>
+              <p>
+                A warning built on temperature alone gets this wrong. 44°C in dry air and 38°C in humid
+                air put very different loads on a body that still has to work outside, and the humid one
+                is usually the more dangerous of the two.
+              </p>
+              <p>
+                So the output isn't a temperature threshold. I take forecast fields for heat, humidity,
+                wind and radiation, compute a human thermal stress index from them, and turn that into a
+                ward-level warning with enough lead time to act on. Machine learning does the bias
+                correction on the forecast; the index itself stays physical, because a number that
+                triggers a public alert has to be explainable.
+              </p>
+              <div class="stack"><b>Python</b><b>Forecast data</b><b>ML bias correction</b><b>Geospatial</b><b>Alerting</b></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="lab-card reveal">
+          <div class="lab-top">
+            <span class="tagid">Client project</span>
+            <span class="badge live">Running</span>
+            <span class="right">Node.js · Baileys</span>
+          </div>
+          <div class="lab-body">
+            <div>
+              <h3>WhatsApp AI Assistant</h3>
+              <p class="org">Company project<br>Group and private chat automation<br>Production target: 24/7</p>
+              <dl class="kv">
+                <dt>Now</dt><dd>Live in several groups</dd>
+                <dt>Target</dt><dd>200+ groups, 10–15 members each</dd>
+                <dt>Role</dt><dd>Manager's assistant</dd>
+              </dl>
+              <div class="meter">
+                <div class="meter-bar"><i data-fill="62"></i></div>
+                <div class="meter-cap"><span>Demo → production</span><span>Scaling</span></div>
+              </div>
+            </div>
+            <div>
+              <p>
+                The assistant lives inside WhatsApp instead of a dashboard nobody opens. It answers
+                whoever tags it in a group, and reminds managers about their own plans by tagging them
+                back, in the thread where the work is already being discussed.
+              </p>
+              <p>
+                The demo has been running across live groups for a while. The version I'm scaling to is
+                harder: hundreds of groups, a different manager in each, and the same manager across
+                several of them. Most of the real engineering is session handling, rate limits and
+                surviving reconnects.
+              </p>
+              <div class="stack"><b>Node.js</b><b>Baileys</b><b>LLM API</b><b>Queues</b><b>Session handling</b></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="lab-card reveal">
+          <div class="lab-top">
+            <span class="tagid">SIH26093</span>
+            <span class="badge wip">Second track</span>
+            <span class="right">Ministry of Social Justice &amp; Empowerment</span>
+          </div>
+          <div class="lab-body">
+            <div>
+              <h3>Real-time Stress &amp; Trauma Assessment, NHAA Helpline</h3>
+              <p class="org">Smart India Hackathon 2026<br>Helpline 14566<br>Software · Smart Automation</p>
+            </div>
+            <div>
+              <p>
+                The other statement I'm working through. An assessment module that reads caller stress
+                from speech and language in real time, so the most acute calls reach a human counsellor
+                first. It triages; it doesn't diagnose, and it doesn't replace the counsellor.
+              </p>
+              <div class="stack"><b>Speech signals</b><b>NLP</b><b>Real-time triage</b><b>Python</b></div>
+            </div>
+          </div>
+        </article>
+
       </div>
-      <div class="stat-divider"></div>
-      <div class="stat">
-        <span class="stat-num" data-target="10">0</span>
-        <span class="stat-label">Hackathons +</span>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section class="sec" id="about">
+    <div class="wrap">
+      <div class="sec-head reveal"><span class="mono">02</span><h2>About</h2></div>
+      <div class="about">
+        <figure class="photo-wrap reveal" style="margin:0">
+          <img src="PIC.jpeg" alt="Portrait of Arpan Das">
+          <figcaption class="photo-cap"><span>Arpan Das</span><span>Kolkata, IN</span></figcaption>
+        </figure>
+        <div class="prose reveal">
+          <p>I'm a BCA student in Kolkata. I like finishing things, so most of what I build is small enough to actually finish.</p>
+          <p>
+            There's a pattern to the repositories and it's on purpose: open one HTML file and the tool
+            works. No install, no backend, nothing sent anywhere. The bank management system handles
+            overdrafts, interest and an admin console. The EMI calculator does proper reducing-balance
+            amortisation. OMNICONVERT converts <code>.docx</code>, <code>.iso</code> and <code>.pdf</code>
+            without a file leaving your browser. Where the maths matters I write tests — My Wallet has 66.
+          </p>
+          <p>
+            The newer work is a different discipline. A bot that has to stay alive in hundreds of groups
+            and an SIH build whose output is a public safety warning both care more about uptime and
+            being honest about uncertainty than about clever frontend.
+          </p>
+          <p>I'm looking for an internship where I'd be shipping, not watching.</p>
+          <dl class="facts">
+            <div><dt>Degree</dt><dd>BCA — Bachelor of Computer Applications</dd></div>
+            <div><dt>Based in</dt><dd>Kolkata, West Bengal</dd></div>
+            <div><dt>Working on</dt><dd>AI automation, frontend engineering</dd></div>
+            <div><dt>Status</dt><dd>Open to internships</dd></div>
+          </dl>
+        </div>
+      </div>
+
+      <div class="tl reveal">
+        <div class="tl-row"><time>2024 — now</time><div><h4>BCA student</h4><p>Programming, algorithms and data structures. C came first, which is why several repos still have a terminal version sitting next to the browser one.</p></div></div>
+        <div class="tl-row"><time>2024</time><div><h4>Frontend Developer, Sudarshana</h4><p>A women's safety app. I built the interface and the SOS flow, for the case where someone has three seconds and one thumb.</p></div></div>
+        <div class="tl-row"><time>2025</time><div><h4>Creator, Digiflo</h4><p>My department's notes platform, built end to end: semester-wise subjects, a moderation queue, and separate access for students, moderators and owners.</p></div></div>
+        <div class="tl-row"><time>2026</time><div><h4>Automation and SIH 2026</h4><p>Taking the client WhatsApp bot from demo to production scale, and building the heatwave warning system for the Ministry of Earth Sciences statement.</p></div></div>
+        <div class="tl-row"><time>Ongoing</time><div><h4>Hackathons and workshops</h4><p>10+ so far. Building with a team against a clock teaches you what a codebase should look like before it's under pressure.</p></div></div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="hero-image-wrap">
-    <div class="hero-img-ring ring1"></div>
-    <div class="hero-img-ring ring2"></div>
-    <div class="hero-img-ring ring3"></div>
-    <img
-    src="picture.jpeg"
-    alt="Arpan Das"
-    class="hero-img"
-    id="heroPhoto"
-    style="transition: transform 0.5s;">
-    <div class="hero-img-badge">
-      <span>BCA '2nd Sem</span>
+  <!-- ── STACK ── -->
+  <section class="sec" id="stack">
+    <div class="wrap">
+      <div class="sec-head reveal"><span class="mono">03</span><h2>Stack</h2><span class="tail">measured from the repos</span></div>
+      <div class="skills reveal" id="skillGrid"></div>
+      <div class="langwrap reveal">
+        <h3>Code by language, all public repositories</h3>
+        <p class="note" id="langNote">—</p>
+        <div class="bar" id="langBar" role="img" aria-label="Bytes of code by language across the 24 public repositories."></div>
+        <div class="barkey" id="langKey"></div>
+      </div>
     </div>
-  </div>
+  </section>
 
-  <div class="scroll-hint">
-    <span>Scroll</span>
-    <div class="scroll-line"></div>
-  </div>
-</section>
+  <!-- ── SELECTED WORK ── -->
+  <section class="sec" id="work">
+    <div class="wrap">
+      <div class="sec-head reveal"><span class="mono">04</span><h2>Selected work</h2></div>
+      <div class="feat reveal">
+        <a class="feat-item" href="https://github.com/arpandas90075/Digiflo" target="_blank" rel="noopener">
+          <div><span class="num">01</span><h3>Digiflo</h3><span class="role">Creator &amp; developer</span>
+            <div class="stack"><b>React</b><b>Vite</b><b>Supabase</b><b>Google Drive API</b></div></div>
+          <div><p>A notes-sharing platform for my BCA department. Semester-wise subjects with notes, previous-year questions, books and links, a moderation queue so uploads get checked before they go live, and separate access for students, moderators and owners. Files sit in Google Drive, which keeps hosting free.</p>
+            <span class="golink"><u>View repository</u> <span class="arw">→</span></span></div>
+        </a>
+        <a class="feat-item" href="https://github.com/arpandas90075/OMNICONVERT" target="_blank" rel="noopener">
+          <div><span class="num">02</span><h3>OMNICONVERT</h3><span class="role">File converter</span>
+            <div class="stack"><b>Vanilla JS</b><b>Web Workers</b><b>Client-side only</b></div></div>
+          <div><p>Converts <code>.docx</code>, <code>.pptx</code>, <code>.xlsx</code>, <code>.img</code>, <code>.iso</code>, <code>.pdf</code>, audio and code between formats, and shrinks images to an exact target size. Nothing uploads, because there's no server to upload to — which is also the whole privacy story.</p>
+            <span class="golink"><u>View repository</u> <span class="arw">→</span></span></div>
+        </a>
+        <a class="feat-item" href="https://github.com/arpandas90075/Naturecraftsnc" target="_blank" rel="noopener">
+          <div><span class="num">03</span><h3>NatureCrafts</h3><span class="role">Storefront for a real shop</span>
+            <div class="stack"><b>TypeScript</b><b>React</b><b>Google Sheets</b><b>Apps Script</b></div></div>
+          <div><p>A handmade soap store whose entire backend is a Google Sheet. Live catalogue, cart, cash and UPI on delivery, automatic e-bill emails. The owner updates stock in a spreadsheet she already knows how to use and the site follows. Running cost: nothing.</p>
+            <span class="golink"><u>View repository</u> <span class="arw">→</span></span></div>
+        </a>
+        <a class="feat-item" href="https://github.com/arpandas90075/Bank-management-system" target="_blank" rel="noopener">
+          <div><span class="num">04</span><h3>Bank Management System</h3><span class="role">Same spec, two languages</span>
+            <div class="stack"><b>C</b><b>Vanilla JS</b><b>No dependencies</b></div></div>
+          <div><p>Accounts, transfers, overdrafts, interest and an admin console. I wrote it first in C for the terminal, then rebuilt it as a browser interface against the same rules. Keeping both in one repo is the clearest thing I've made about what survives a change of language.</p>
+            <span class="golink"><u>View repository</u> <span class="arw">→</span></span></div>
+        </a>
+      </div>
+    </div>
+  </section>
 
-<!-- ═══ QUICK PREVIEW STRIP ═══ -->
-<section class="preview-strip">
-  <div class="strip-item" onclick="navigateTo('about.html')">
-    <div class="strip-icon">👤</div>
-    <div class="strip-text">
-      <strong>About Me</strong>
-      <span>My story & journey</span>
-    </div>
-    <svg class="strip-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg>
-  </div>
-  <div class="strip-item" onclick="navigateTo('skills.html')">
-    <div class="strip-icon">⚡</div>
-    <div class="strip-text">
-      <strong>Skills</strong>
-      <span>Languages & tools</span>
-    </div>
-    <svg class="strip-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg>
-  </div>
-  <div class="strip-item" onclick="navigateTo('projects.html')">
-    <div class="strip-icon">🚀</div>
-    <div class="strip-text">
-      <strong>Projects</strong>
-      <span>What I've built</span>
-    </div>
-    <svg class="strip-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg>
-  </div>
-  <div class="strip-item" onclick="navigateTo('contact.html')">
-    <div class="strip-icon">✉️</div>
-    <div class="strip-text">
-      <strong>Contact</strong>
-      <span>Let's connect</span>
-    </div>
-    <svg class="strip-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg>
-  </div>
-</section>
+  <!-- ── INDEX ── -->
+  <section class="sec" id="index">
+    <div class="wrap">
+      <div class="sec-head reveal"><span class="mono">05</span><h2>Every repository</h2><span class="tail" id="idxTail">31 repos</span></div>
 
-<footer class="mini-footer">
-  <p>© 2026 Arpan Das · Designed & Coded by me</p>
+      <div class="panel-tools reveal">
+        <div class="fgroup" id="langFilters"><span class="mono">Contains</span></div>
+        <div class="fgroup" id="visFilters"><span class="mono">Access</span></div>
+        <label class="searchbox">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.7" y2="16.7"/></svg>
+          <input type="search" id="q" placeholder="Search repos…" aria-label="Search repositories">
+        </label>
+        <select class="sortsel" id="sort" aria-label="Sort order">
+          <option value="curated">Sort: featured first</option>
+          <option value="size">Sort: most code</option>
+          <option value="name">Sort: A–Z</option>
+          <option value="langs">Sort: most languages</option>
+        </select>
+      </div>
+
+      <div class="index reveal">
+        <div class="ihead"><span>№</span><span>Repository</span><span>What it is</span><span>Composition</span><span>Access</span></div>
+        <div id="rows"></div>
+      </div>
+      <p class="count" id="countLine"></p>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section class="sec" id="contact">
+    <div class="wrap contact">
+      <div class="reveal">
+        <span class="mono" style="color:var(--muted)">06</span>
+        <h2>Get in touch</h2>
+        <p class="sub">Internships, client builds, or a tool you keep wishing existed. I read everything and I reply.</p>
+        <span class="avail"><span class="pip"></span>Open to internships</span>
+      </div>
+      <div class="links reveal">
+        <a href="https://github.com/arpandas90075" target="_blank" rel="noopener"><span><span class="lbl">GitHub</span><span class="val">@arpandas90075</span></span><span class="arw">→</span></a>
+        <a href="mailto:arpandas90075@gmail.com"><span><span class="lbl">Email</span><span class="val">arpandas90075@gmail.com</span></span><span class="arw">→</span></a>
+        <a href="https://instagram.com/arpanas9007" target="_blank" rel="noopener"><span><span class="lbl">Instagram</span><span class="val">@arpanas9007</span></span><span class="arw">→</span></a>
+        <a href="https://github.com/arpandas90075?tab=repositories" target="_blank" rel="noopener"><span><span class="lbl">Everything else</span><span class="val">All 31 repositories</span></span><span class="arw">→</span></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <span>© 2026 Arpan Das · Kolkata</span>
+    <span>Built by hand · <a href="https://github.com/arpandas90075/my-portfolio" target="_blank" rel="noopener">source</a></span>
+  </div>
 </footer>
-
 <script src="main.js"></script>
 </body>
 </html>
